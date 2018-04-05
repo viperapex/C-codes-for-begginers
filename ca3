@@ -1,0 +1,116 @@
+#include<stdio.h>
+struct stud
+{
+       char name[100];
+       int regid;
+       float eng,math,c,networks,sysarc;
+       char grade;
+}
+//stud1,stud2,stud3,stud4,stud5,stud6,stud7,stud8,stud9,stud10;
+stud[2];
+void main()
+{
+    printf("Enter Student Details for 10 students\n");
+    int i,x;
+    for(i=1;i<=2;i++)
+    {
+        printf("Enter the name of student :");
+        scanf("%s",&stud[i].name);
+        printf("Enter the Registraion ID of student :");
+        scanf("%d",&stud[i].regid);
+        printf("Enter marks obtained in C Programming :");
+        scanf("%f",&stud[i].c);
+        printf("Enter marks obtained in Maths");
+        scanf("%f",&stud[i].math);
+        printf("Enter marks obtained in Networks");
+        scanf("%f",&stud[i].networks);
+        printf("Enter marks obtained in System Architecture :");
+        scanf("%f",&stud[i].sysarc);
+        printf("Enter marks obtained in English:");
+        scanf("%f",&stud[i].eng);
+        printf("\n");
+
+    }
+        char enggrd,mathgrd,networksgrd,cgrd,sysarchgrd;
+        printf("Enter the student no to see record : ");
+        scanf("%d",&x);
+        if(stud[x].eng<40)
+        enggrd='F';
+        else if(stud[x].eng<50 && stud[x].eng>40)
+        enggrd='E';
+        else if(stud[x].eng<60 && stud[x].eng>50)
+        enggrd='D';
+        else if(stud[x].eng<70 && stud[x].eng>60)
+        enggrd='C';
+        else if(stud[x].eng<80 && stud[x].eng>70)
+        enggrd='B';
+        else if(stud[x].eng<90 && stud[x].eng>80)
+        enggrd='A';
+        else (stud[x].eng<100 && stud[x].eng>90);
+        enggrd='A+';
+        if(stud[x].math<40)
+        mathgrd='F';
+        else if(stud[x].math<50 && stud[x].math>40)
+        mathgrd='E';
+        else if(stud[x].math<60 && stud[x].math>50)
+        mathgrd='D';
+        else if(stud[x].math<70 && stud[x].math>60)
+        mathgrd='C';
+        else if(stud[x].math<80 && stud[x].math>70)
+        mathgrd='B';
+        else if(stud[x].math<90 && stud[x].math>80)
+        mathgrd='A';
+        else (stud[x].math<100 && stud[x].math>90);
+        mathgrd='A+';
+        if(stud[x].networks<40)
+        networksgrd='F';
+        else if(stud[x].networks<50 && stud[x].networks>40)
+        networksgrd='E';
+        else if(stud[x].networks<60 && stud[x].networks>50)
+        networksgrd='D';
+        else if(stud[x].networks<70 && stud[x].networks>60)
+        networksgrd='C';
+        else if(stud[x].networks<80 && stud[x].networks>70)
+        networksgrd='B';
+        else if(stud[x].networks<90 && stud[x].networks>80)
+        networksgrd='A';
+        else (stud[x].networks<100 && stud[x].networks>90);
+        networksgrd='A+';
+        if(stud[x].c<40)
+        cgrd='F';
+        else if(stud[x].c<50 && stud[x].c>40)
+        cgrd='E';
+        else if(stud[x].c<60 && stud[x].c>50)
+        cgrd='D';
+        else if(stud[x].c<70 && stud[x].c>60)
+        cgrd='C';
+        else if(stud[x].c<80 && stud[x].c>70)
+        cgrd='B';
+        else if(stud[x].c<90 && stud[x].c>80)
+        cgrd='A';
+        else (stud[x].c<100 && stud[x].c>90);
+        cgrd='A+';
+        if(stud[x].sysarc<40)
+        sysarchgrd='F';
+        else if(stud[x].sysarc<50 && stud[x].sysarc>40)
+        sysarchgrd='E';
+        else if(stud[x].sysarc<60 && stud[x].sysarc>50)
+        sysarchgrd='D';
+        else if(stud[x].sysarc<70 && stud[x].sysarc>60)
+        sysarchgrd='C';
+        else if(stud[x].sysarc<80 && stud[x].sysarc>70)
+        sysarchgrd='B';
+        else if(stud[x].sysarc<90 && stud[x].sysarc>80)
+        enggrd='A';
+        else (stud[x].sysarc<=100 && stud[x].sysarc>90);
+        sysarchgrd='A+';
+        total=
+        printf("Name of student: %s\n",stud[x].name);
+        printf("Registration id: %d \n",stud[x].regid);
+        printf("Marks Obtained in English: %f  Grade %c\n",stud[x].eng,enggrd);
+        printf("Marks Obtained in Maths: %f  Grade %c\n",stud[x].math,mathgrd);
+        printf("Marks Obtained in Networks: %f  Grade %c\n",stud[x].networks,networksgrd);
+        printf("Marks Obtained in C Programming: %f Grade %c\n",stud[x].c,cgrd);
+        printf("Marks Obtained in System Architecture: %f Grade %c\n",stud[x].sysarc,sysarchgrd);
+        
+}
